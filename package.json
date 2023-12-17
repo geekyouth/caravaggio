@@ -10,7 +10,7 @@
   "scripts": {
     "start": "NODE_ENV=production node dist/server",
     "dev": "NODE_ENV=development tsnd --respawn src/server.ts",
-    "build": "rimraf -G dist/ && NODE_ENV=production tsc --build  --output public",
+    "build": "rimraf -G dist/ && NODE_ENV=production tsc --build",
     "prepare": "npm run build",
     "test": "npm run lint && npm run test-only -- --coverage --colors=false",
     "test-only": "NODE_ENV=test jest",
